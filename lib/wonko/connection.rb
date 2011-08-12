@@ -17,7 +17,7 @@ module Wonko
         "SERVER_PORT"       => server.port,
         "rack.version"      => Rack::VERSION,
         "rack.multithread"  => true,
-        "rack.multiprocess" => @multi,
+        "rack.multiprocess" => true,
         "rack.run_once"     => false,
         "rack.errors"       => $stdout
       }

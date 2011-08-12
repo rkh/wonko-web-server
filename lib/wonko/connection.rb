@@ -70,7 +70,6 @@ module Wonko
 
       status, headers, body = response
       meta = "HTTP/1.#{@parser.http_minor} #{status} #{HTTP_STATUS_CODES[status]}\r\n"
-      @has_content_length, @connection_mode = false, nil
 
       headers.each do |key, values|
         next if key == 'Connection'
